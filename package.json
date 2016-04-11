@@ -4,7 +4,7 @@
   "description": "Check if a given value is empty in JS extending his \"truthy\" and \"falsy\" nature",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Testing empty-value\" && node ./node_modules/mocha/bin/mocha ./tests"
   },
   "repository": {
     "type": "git",
@@ -27,5 +27,9 @@
   "bugs": {
     "url": "https://github.com/juliomatcom/empty-value/issues"
   },
-  "homepage": "https://github.com/juliomatcom/empty-value#readme"
+  "homepage": "https://github.com/juliomatcom/empty-value#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5"
+  }
 }

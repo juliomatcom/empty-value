@@ -1,26 +1,23 @@
 'use strict';
 
-function empty (value, goDeep) {
-  return isEmpty(value, goDeep ? goDeep : false)
-}
+function empty (value, hook) {
 
-function isEmpty (value, goDeep, deep) {
   let test = false;
 
   if (!value) { //test "", 0, NaN, null, undefined, false, -0
-    test = true
+    test = true;
   }
   else if (typeof value === 'string'){
-    test = value.replace(' ', '') .length ? false : true
+    test = value.replace(/\ /g, '').length ? false : true;
   }
   else if (typeof value === 'object') { // arrays and objects
-    test = Object.keys(value).length ? false : true
+    test = Object.keys(value).length ? false : true;
   }
-  else if (goDeep && typeof value === 'function') { //functions
-    test = deep ? false : isEmpty(value(), goDeep, 1)
+  else if (typeof hook === 'function') {
+    return hook(value);
   }
 
   return test;
 }
 
-module.exports = empty
+module.exports = empty;

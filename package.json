@@ -1,0 +1,31 @@
+{
+  "name": "empty-value",
+  "version": "0.0.0",
+  "description": "Check if a given value is empty in JS extending his \"truthy\" and \"falsy\" nature",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juliomatcom/empty-value.git"
+  },
+  "keywords": [
+    "empty",
+    "value",
+    "array",
+    "object",
+    "string",
+    "boolean",
+    "null",
+    "undefined",
+    "truthy",
+    "falsy"
+  ],
+  "author": "juliomatcom",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/juliomatcom/empty-value/issues"
+  },
+  "homepage": "https://github.com/juliomatcom/empty-value#readme"
+}

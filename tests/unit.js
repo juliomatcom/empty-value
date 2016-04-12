@@ -44,8 +44,8 @@ describe('empty-value', function() {
       assert.equal(empty(''), true);
     });
 
-    it('should return FALSE if \'0\'', function () {
-      assert.equal(empty('0'), false);
+    it('should return TRUE if \'0\'', function () {
+      assert.equal(empty('0'), true);
     });
 
     it('should return TRUE if only contain spaces', function () {

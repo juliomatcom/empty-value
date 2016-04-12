@@ -78,10 +78,10 @@ describe('empty-value', function() {
     });
 
     it('should return TRUE if not have directly properties', function () {
-      let proto = {
+      var proto = {
         foo : 'bar'
       };
-      let obj = Object.create(proto);
+      var obj = Object.create(proto);
 
       assert.equal(empty(obj), true);
     });
@@ -90,16 +90,16 @@ describe('empty-value', function() {
   describe('Hooks', function () {
 
     it('should return FALSE if value is a function and theres is NO Hook', function () {
-      let func = function () {
+      var func = function () {
         return 'foo';
       }
       assert.equal(empty(func), false);
     });
     it('should return TRUE if value is a function and pass a Hook', function () {
-      let myHook = function (value) {
+      var myHook = function (value) {
         return typeof value === 'function';
       }
-      let func = function () {
+      var func = function () {
         return 'foo';
       }
 

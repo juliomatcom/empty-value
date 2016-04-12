@@ -5,9 +5,7 @@
 [![Build Status](https://travis-ci.org/juliomatcom/empty-value.svg?branch=master)](https://travis-ci.org/juliomatcom/empty-value)
 
 ```javascript
-function empty (value, [,hook]){ } // Returns: true or false
-
-
+function empty (value, [,hook]){ ... } // Returns: true or false
 ```
 ##### The following things are considered to be empty:
 - NaN
@@ -19,7 +17,7 @@ function empty (value, [,hook]){ } // Returns: true or false
 - undefined
 - "" (an empty string)
 - "  " (an string with only spaces)
-- array( ) / [ ] (an empty array)
+- array( ) / \[ \] (an empty array)
 - { } (an empty object / no direct keys)
 
 ##### Examples

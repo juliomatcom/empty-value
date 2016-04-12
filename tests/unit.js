@@ -28,8 +28,9 @@ describe('empty-value', function() {
   });
 
   describe('Number', function () {
-    it('should return TRUE if value is Number === 0 or NaN', function () {
+    it('should return TRUE if value is 0 or 0.0 or NaN', function () {
       assert.equal(empty(0), true);
+      assert.equal(empty(0.0), true);
       assert.equal(empty(NaN), true);
     });
 

@@ -4,10 +4,13 @@
 ### Status
 [![Build Status](https://travis-ci.org/juliomatcom/empty-value.svg?branch=master)](https://travis-ci.org/juliomatcom/empty-value)
 
-```javascript
-function empty (value, [,hook]){ ... } // Returns: true or false
+### Installation
+Using **npm**
+```sh
+npm install --save empty-value
 ```
-##### The following things are considered to be empty:
+
+##### The following values are considered to be empty:
 - NaN
 - 0 (0 as an integer)
 - 0.0 (0 as a float)
@@ -20,7 +23,7 @@ function empty (value, [,hook]){ ... } // Returns: true or false
 - array( ) / \[ \] (an empty array)
 - { } (an empty object / no direct keys)
 
-##### Examples
+### Usage
 ```javascript
 var empty = require('empty-value');
 

@@ -1,6 +1,6 @@
 {
   "name": "empty-value",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Check if a given value is empty in JS extending his \"truthy\" and \"falsy\" nature",
   "main": "index.js",
   "scripts": {

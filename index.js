@@ -1,7 +1,7 @@
 'use strict';
 
 function empty (value, hook) {
-  let test = false;
+  var test = false;
 
   if (!value || value === '0') { //test "","0", 0, 0.0, NaN, null, undefined, false, -0
     test = true;

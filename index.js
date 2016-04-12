@@ -1,10 +1,9 @@
 'use strict';
 
 function empty (value, hook) {
-
   let test = false;
 
-  if (!value) { //test "", 0, NaN, null, undefined, false, -0
+  if (!value || value === '0') { //test "","0", 0, NaN, null, undefined, false, -0
     test = true;
   }
   else if (typeof value === 'string'){

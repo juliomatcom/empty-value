@@ -68,4 +68,4 @@ empty(func, myEmptyHook); //true
 ```
 
 ###### License
- MIT
+ [MIT @juliomatcom](http://licsource.com/mit?name=Julio Cesar Martin&year=2016&email=juliomatcom@gmail.com&url=http://julces.com/)

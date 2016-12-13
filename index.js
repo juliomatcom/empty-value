@@ -16,6 +16,8 @@ function empty (value, hook) {
   if (typeof hook === 'function') {
     return hook(value);
   }
+  
+  return false;
 }
 
 module.exports = empty;
